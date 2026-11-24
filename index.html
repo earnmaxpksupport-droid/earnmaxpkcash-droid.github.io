@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="monetag" content="e253719c424b41191a4ee162c2fd19e4">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EARN MAX PK</title>
+<link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#16a34a"><link rel="icon" href="/icon-192.png"><link rel="apple-touch-icon" href="/icon-192.png"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="EARN MAX PK">
+<style>
+:root{--bg:#f1faf3;--card:#fff;--ink:#0f2a1a;--mute:#5f7d6a;--line:#dcecdf;--g1:#0a5c28;--g2:#16a34a;--g3:#22c55e;--y:#facc15;--soft:#e2f7e6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#07130b;--card:#0f2015;--ink:#e6f6ea;--mute:#8fb59b;--line:#1c3524;--soft:#12301c}}
+:root[data-theme="dark"]{--bg:#07130b;--card:#0f2015;--ink:#e6f6ea;--mute:#8fb59b;--line:#1c3524;--soft:#12301c}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+[hidden]{display:none!important}
+#app{max-width:480px;margin:0 auto;min-height:100%}
+section{padding:14px 16px 100px;animation:up .3s ease both}
+@keyframes up{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+h1,h2,h3{margin:0;font-weight:800;letter-spacing:-.01em}
+h2{font-size:21px}h3{font-size:16px}p{margin:0}a{color:inherit;text-decoration:none}
+small,.mute{color:var(--mute)}small{font-size:12.5px}
+svg.i{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.crown{width:34px;height:34px}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:52px;border:0;border-radius:16px;font:700 17px system-ui,sans-serif;color:#fff;background:linear-gradient(180deg,var(--g3),var(--g1));box-shadow:0 8px 18px -8px rgba(10,92,40,.7);cursor:pointer}
+.btn.out{background:var(--card);color:var(--ink);border:1.5px solid var(--line);box-shadow:none}
+.btn.y{background:linear-gradient(180deg,#fde047,#facc15);color:#3b2a00;box-shadow:none}
+.btn.sm{min-height:40px;width:auto;flex:1;font-size:14px;border-radius:12px}
+.btn:active{transform:scale(.98)}
+[data-s=splash]{padding:0}
+.full{min-height:100dvh;padding:30px 26px 34px;display:flex;flex-direction:column;align-items:center;text-align:center;color:#fff;background:radial-gradient(circle at 50% 38%,#16a34a,#064e1f 62%,#03280f);overflow:hidden;position:relative}
+.full .crown{width:104px;height:104px;margin-top:6vh;filter:drop-shadow(0 8px 16px rgba(0,0,0,.4))}
+.full h1{font-size:44px;font-style:italic;line-height:1;margin-top:6px;text-shadow:0 4px 14px rgba(0,0,0,.4)}
+.full h1 b{display:block;color:#a3e635;font-size:54px}
+.rocket{font-size:96px;margin:10px 0 auto;animation:fly 2.4s ease-in-out infinite}
+@keyframes fly{50%{transform:translateY(-12px) rotate(4deg)}}
+.coin{position:absolute;font-size:26px;opacity:.9}
+.full .btn,.full .btn.out{margin-top:10px;max-width:340px}
+.full .btn.out{background:#fff;color:#0a5c28}
+.bar{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.bar .t{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;font:800 19px system-ui,sans-serif}
+.bar .t.l{justify-content:flex-start}
+.ib{width:42px;height:42px;border-radius:13px;background:var(--card);border:1px solid var(--line);display:grid;place-items:center;color:var(--g1);cursor:pointer;flex:none}
+.back{display:inline-flex;align-items:center;gap:4px;color:var(--g2);font-weight:700;margin-bottom:10px}
+.who{display:flex;align-items:center;gap:12px;margin:6px 0 12px}
+.av{width:62px;height:62px;flex:none;border-radius:50%;display:grid;place-items:center;background:var(--soft);border:3px solid var(--y)}
+.lv{display:inline-block;margin-top:3px;padding:2px 10px;border-radius:99px;background:var(--soft);color:var(--g2);font-weight:700;font-size:12px}
+.bal{display:flex;align-items:center;gap:12px;padding:14px;border-radius:20px;color:#fff;background:linear-gradient(135deg,#064e1f,#16a34a);box-shadow:0 12px 24px -12px rgba(6,78,31,.9)}
+.bal .amt{font:800 26px system-ui,sans-serif;line-height:1.1}
+.bal small{color:rgba(255,255,255,.8)}
+.bal .btn{width:auto;min-height:38px;padding:0 14px;font-size:14px;margin-left:auto;border-radius:12px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}
+.tile{border-radius:18px;padding:12px;text-align:center;font-weight:600;font-size:13px}
+.tile b{display:block;font:800 22px system-ui,sans-serif;margin-top:2px}
+.t1{background:#e0efff;color:#12408a}.t2{background:#efe6ff;color:#4c1d95}.t3{background:#ffeedd;color:#9a3412}.t4{background:#e2f7e6;color:#14532d}
+.chk{display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:18px;color:#fff;background:linear-gradient(135deg,#065f2a,#22c55e)}
+.chk .btn{width:auto;min-height:38px;padding:0 14px;font-size:14px;margin-left:auto;border-radius:12px}
+.sec{display:flex;justify-content:space-between;align-items:baseline;margin:18px 0 8px}
+.sec a{color:var(--g2);font-size:13px;font-weight:700}
+.qa{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.qa a,.qa button{display:flex;flex-direction:column;align-items:center;gap:5px;font:600 12px system-ui,sans-serif;color:var(--ink);background:none;border:0;padding:0;cursor:pointer}
+.qa span,.ic{display:grid;place-items:center;width:100%;aspect-ratio:1;border-radius:16px;font-size:24px}
+.ic{width:46px;height:46px;aspect-ratio:auto;border-radius:14px;font-size:22px;flex:none}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px}
+.empty{text-align:center;padding:22px 12px;color:var(--mute)}
+.empty .ic{margin:0 auto 8px;background:var(--soft)}
+.note{margin:12px 0;padding:10px 13px;border-radius:14px;background:var(--soft);border:1px dashed var(--g2);font-size:13px}
+.tabs{display:flex;gap:6px;overflow-x:auto;margin:0 -16px 12px;padding:0 16px;scrollbar-width:none}
+.tabs button{flex:none;border:0;background:var(--card);color:var(--ink);border-radius:10px;padding:8px 14px;font:700 13.5px system-ui,sans-serif;cursor:pointer;border:1px solid var(--line)}
+.tabs button.on{background:var(--g2);color:#fff;border-color:var(--g2)}
+.task{display:flex;align-items:center;gap:12px;padding:12px;margin-bottom:10px}
+.task>div:nth-child(2){flex:1;min-width:0}.task b{display:block}
+.task .r{text-align:right;font-weight:800;color:var(--g2)}
+.task .btn{min-height:32px;font-size:13px;padding:0 14px;margin-top:4px;border-radius:9px;width:auto}
+.hero{border-radius:22px;padding:18px;color:#fff;background:linear-gradient(135deg,#1e1b8a,#4338ca 60%,#6d28d9);display:flex;align-items:center;gap:8px}
+.hero h2{font-size:22px}.hero h2 em{color:var(--y);font-style:normal}.hero p{font-size:13px;opacity:.9;margin:4px 0 12px}
+.hero .big{font-size:70px;line-height:1}
+.hero .btn{width:auto;min-height:36px;padding:0 16px;font-size:14px;border-radius:10px}
+.games{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.gm{border-radius:20px;padding:14px 10px;text-align:center;font-weight:800}
+.gm .big{font-size:54px;line-height:1.1}.gm small{display:block;font-weight:500;margin-bottom:8px;color:inherit;opacity:.8}
+.gm .btn{min-height:34px;font-size:13px;border-radius:10px;padding:0 10px;width:auto;display:inline-flex}
+.g1{background:linear-gradient(160deg,#dbeafe,#fce7f3);color:#1e3a8a}.g2{background:linear-gradient(160deg,#fde68a,#fbcfe8);color:#7c2d12}.g3{background:linear-gradient(160deg,#e9d5ff,#bfdbfe);color:#4c1d95}.g4{background:linear-gradient(160deg,#bbf7d0,#fef08a);color:#14532d}
+.acts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0}
+.acts button{border:0;border-radius:16px;padding:12px 4px;font:700 13px system-ui,sans-serif;display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer}
+.acts span{font-size:26px}
+.code{display:flex;gap:8px;align-items:center}
+.code b{flex:1;padding:12px;border:1.5px dashed var(--g2);border-radius:12px;font:800 20px system-ui,sans-serif;letter-spacing:.06em;text-align:center}
+.field{display:block;margin:13px 0 0}
+.field span{display:block;font-weight:700;font-size:13.5px;margin-bottom:5px}
+.field input{width:100%;height:50px;padding:0 14px;border-radius:14px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:16px system-ui,sans-serif}
+.field input:focus{outline:2px solid var(--g2);outline-offset:1px}
+.links{text-align:center;margin-top:14px;font-size:14px}.links a{color:var(--g2);font-weight:700}
+.list{padding:2px 14px}
+.list a,.list button{display:flex;width:100%;align-items:center;gap:12px;padding:13px 0;border:0;border-bottom:1px solid var(--line);background:none;color:var(--ink);font:600 15px system-ui,sans-serif;text-align:left;cursor:pointer}
+.list>:last-child{border:0;color:#dc2626}
+.list .ic{width:34px;height:34px;font-size:16px;border-radius:10px;background:var(--soft)}
+/* Premium profile screen */
+[data-s=profile] .who{position:relative;overflow:hidden;gap:14px;margin:6px 0 14px;padding:14px 16px;border-radius:22px;color:#fff;background:linear-gradient(135deg,#032d12,#0a5c28 60%,#16a34a);border:1.5px solid rgba(163,230,53,.45);box-shadow:0 14px 26px -14px rgba(6,78,31,.95),inset 0 1px 0 rgba(255,255,255,.25)}
+[data-s=profile] .who::after{content:"";position:absolute;right:-30px;top:-40px;width:120px;height:200px;background:rgba(255,255,255,.09);transform:rotate(25deg);pointer-events:none}
+[data-s=profile] .who small{color:#d9fbe3}
+[data-s=profile] .av{position:relative;width:78px;height:78px;background:radial-gradient(circle at 50% 35%,#fff4b8,#e0a82e 70%,#b07d12);border:4px solid #fde68a;box-shadow:0 0 0 3px rgba(250,204,21,.35),0 0 22px rgba(250,204,21,.65)}
+[data-s=profile] .av .crown{width:46px;height:46px;filter:drop-shadow(0 2px 3px rgba(0,0,0,.45))}
+[data-s=profile] .av .lau{position:absolute;inset:-14px;width:calc(100% + 28px);height:calc(100% + 28px);pointer-events:none}
+[data-s=profile] .list{padding:6px 12px;border-radius:26px}
+[data-s=profile] .list a,[data-s=profile] .list button{padding:12px 0;gap:14px}
+[data-s=profile] .list a::after{content:"›";margin-left:auto;display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--soft);color:var(--g1);font:800 20px/1 system-ui,sans-serif;padding-bottom:2px}
+[data-s=profile] .list .ic{width:48px;height:48px;border-radius:14px;position:relative;overflow:hidden;box-shadow:0 6px 12px -6px rgba(0,0,0,.55),inset 0 -3px 0 rgba(0,0,0,.18);font-size:0}
+[data-s=profile] .list .ic::before{content:"";position:absolute;left:0;right:0;top:0;height:50%;background:linear-gradient(180deg,rgba(255,255,255,.42),rgba(255,255,255,0))}
+[data-s=profile] .list .ic svg{position:relative;width:30px;height:30px}
+.pg1{background:linear-gradient(160deg,#4ade80,#15803d)}.pg2{background:linear-gradient(160deg,#38bdf8,#1d4ed8)}.pg3{background:linear-gradient(160deg,#a78bfa,#6d28d9)}.pg4{background:linear-gradient(160deg,#86efac,#16a34a)}.pg5{background:linear-gradient(160deg,#1e6fd9,#0a2c66)}.pg6{background:linear-gradient(160deg,#4ade80,#166534)}
+[data-s=profile] .list>#bOut{margin:8px 0 6px;width:100%;min-height:54px;padding:0 16px;border-radius:18px;border:1.5px solid #fca5a5;background:linear-gradient(180deg,#fb7185,#dc2626);color:#fff;font:800 20px system-ui,sans-serif;box-shadow:0 10px 18px -10px rgba(220,38,38,.9),inset 0 1px 0 rgba(255,255,255,.35)}
+[data-s=profile] .list>#bOut .ic{background:none;box-shadow:none;width:34px;height:34px;overflow:visible}
+[data-s=profile] .list>#bOut .ic::before{display:none}
+[data-s=profile] .list>#bOut .ic svg{width:30px;height:30px}
+[data-s=profile] .list>#bOut::after{content:"›";margin-left:auto;display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:rgba(127,29,29,.75);font:800 20px/1 system-ui,sans-serif;padding-bottom:2px}
+[dir=rtl] [data-s=profile] .list a::after,[dir=rtl] [data-s=profile] .list>#bOut::after{margin-left:0;margin-right:auto;transform:scaleX(-1)}
+#nav{position:fixed;left:50%;bottom:58px;transform:translateX(-50%);width:100%;max-width:480px;display:flex;background:var(--card);border-top:1px solid var(--line);padding:6px 6px calc(6px + env(safe-area-inset-bottom,0px));z-index:5}
+#nav a{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;padding:5px 0;font-size:11.5px;color:var(--mute)}
+#nav .ne{font-size:20px;line-height:22px;height:22px}
+#nav a.on{color:var(--g2);font-weight:800}
+body{padding-bottom:150px!important}
+#toast{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);width:calc(100% - 32px);max-width:440px;background:#0a2a14;color:#fff;border-radius:14px;padding:12px 16px;font-size:13.5px;opacity:0;pointer-events:none;transition:.25s;z-index:9;border-left:4px solid var(--y)}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+.field select,.field textarea{width:100%;padding:12px 14px;border-radius:14px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:16px system-ui,sans-serif}.field select{height:50px}.field textarea{min-height:110px;resize:vertical}
+.acts a{border-radius:16px;padding:12px 4px;font:700 13px system-ui,sans-serif;display:flex;flex-direction:column;align-items:center;gap:4px}.acts a span{font-size:26px}
+.row2{display:flex;justify-content:space-between;align-items:center}
+.days{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:14px 0}.days div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:8px 4px;text-align:center;font-size:12px}.days b{display:block;color:var(--g2)}
+.wheel{width:230px;height:230px;margin:22px auto 18px;border-radius:50%;border:8px solid var(--y);position:relative;box-shadow:0 12px 24px -10px rgba(0,0,0,.4);background:conic-gradient(#22c55e 0 45deg,#facc15 0 90deg,#3b82f6 0 135deg,#f472b6 0 180deg,#22c55e 0 225deg,#fb923c 0 270deg,#8b5cf6 0 315deg,#ef4444 0 360deg)}.wheel::after{content:"👑";position:absolute;inset:50% auto auto 50%;width:52px;height:52px;margin:-26px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:24px}.ptr{text-align:center;font-size:28px;margin-bottom:-34px;position:relative;z-index:2}
+.sc{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}.sc button{aspect-ratio:3/4;border:0;border-radius:16px;font-size:34px;color:#fff;background:linear-gradient(160deg,#9ca3af,#6b7280);cursor:pointer}
+.pill{display:inline-block;padding:3px 10px;border-radius:99px;font-size:12px;font-weight:700;margin-right:6px}.p1{background:#fef3c7;color:#92400e}.p2{background:#dcfce7;color:#166534}.p3{background:#fee2e2;color:#991b1b}
+:root{--logo:url("data:image/png;base64,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")}
+.logo{display:inline-block;flex:none;background:var(--logo) center/contain no-repeat}
+.full .logo{filter:drop-shadow(0 10px 20px rgba(0,0,0,.45))}
+.tg{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}.tg:last-child{border:0}.tg small{display:block}
+.sw{position:relative;width:46px;height:26px;flex:none}.sw input{opacity:0;position:absolute;inset:0;margin:0;cursor:pointer;z-index:1}.sw i{position:absolute;inset:0;border-radius:99px;background:#b6c4bb;transition:.2s}.sw i::after{content:'';position:absolute;left:3px;top:3px;width:20px;height:20px;border-radius:50%;background:#fff;transition:.2s}.sw input:checked+i{background:var(--g2)}.sw input:checked+i::after{transform:translateX(20px)}
+.snd{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}.snd button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:10px 6px;font:600 13px system-ui,sans-serif;cursor:pointer}.snd button:active{background:var(--soft)}
+.tx{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);color:inherit}.tx:last-child{border:0}.tx .in{color:#16a34a}.tx .out{color:#dc2626}
+.ib{position:relative}.dot{position:absolute;top:7px;right:8px;width:10px;height:10px;border-radius:50%;background:#ef4444;border:2px solid var(--card)}
+.lang{position:absolute;top:14px;right:14px;display:flex;gap:6px;z-index:2}.lang button{border:1px solid rgba(255,255,255,.5);background:rgba(255,255,255,.15);color:#fff;border-radius:10px;padding:6px 12px;font:700 13px system-ui,sans-serif;cursor:pointer}.lang button.on{background:#fff;color:#0a5c28}
+[dir=rtl] body{font-family:"Noto Naskh Arabic","Noto Nastaliq Urdu","Segoe UI",system-ui,sans-serif;line-height:1.75}
+[dir=rtl] .ib svg,[dir=rtl] .back svg{transform:scaleX(-1)}[dir=rtl] .list a,[dir=rtl] .list button{text-align:right}[dir=rtl] .task .r{text-align:left}
+#pwaBar{display:flex;align-items:center;gap:8px}#pwaBar span{flex:1}#pwaBar .btn{width:auto;min-height:34px;padding:0 14px;font-size:13px}
+.chip2{padding:6px 12px;border-radius:99px;background:var(--card);border:1px solid var(--line);font-weight:800}
+.spinBox{background:linear-gradient(160deg,#1e1b8a,#4c1d95 60%,#047857);border-radius:24px;padding:16px;color:#fff}
+.wheelWrap{position:relative;width:270px;height:270px;margin:14px auto 8px}
+.wheel2{position:absolute;inset:0;border-radius:50%;border:8px solid #facc15;box-shadow:0 0 0 4px #b45309,0 12px 30px rgba(0,0,0,.5)}
+.wl{position:absolute;left:50%;top:50%;width:70px;margin:-16px 0 0 -35px;text-align:center;font:800 12px/1.1 system-ui,sans-serif;color:#fff;white-space:pre-line}
+.pointer{position:absolute;top:-16px;left:50%;transform:translateX(-50%);font-size:30px;z-index:3}
+.hub{position:absolute;left:50%;top:50%;width:64px;height:64px;margin:-32px;border-radius:50%;background:radial-gradient(#fbbf24,#b45309);display:grid;place-items:center;font:800 13px system-ui,sans-serif;color:#fff;z-index:2;border:3px solid #fde68a}
+.costRow{display:flex;flex-direction:column;align-items:center;gap:2px;margin:10px 0}.costRow span{font-weight:800}.costRow small{color:#ddd6fe}
+.timer{text-align:center;color:#fde68a;margin:10px 0 0;font-size:13px}
+.scBox{position:relative;width:100%;max-width:320px;height:170px;margin:12px auto;border-radius:16px;overflow:hidden;background:linear-gradient(135deg,#6d28d9,#2563eb)}
+.scBox .prz{position:absolute;inset:0;display:grid;place-items:center;font:800 28px system-ui,sans-serif;color:#fde047}
+.scBox canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}.chips span{padding:6px 12px;border-radius:99px;background:var(--soft);font-weight:700;font-size:13px}
+.ov{position:fixed;inset:0;z-index:30;display:grid;place-items:center;padding:20px;background:rgba(0,0,0,.6)}.ov.solid{background:var(--bg)}.ov .card{max-width:380px;width:100%;margin:0;text-align:center}
+#boot{position:fixed;inset:0;z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:radial-gradient(circle at 50% 38%,#16a34a,#064e1f 62%,#03280f);color:#fff;transition:opacity .35s}
+#boot.off{opacity:0;pointer-events:none}
+#boot.first{animation:bootSafe 0s linear 5s forwards}
+@keyframes bootSafe{to{opacity:0;visibility:hidden;pointer-events:none}}
+#boot .logo{width:104px;height:104px;border-radius:24px;filter:drop-shadow(0 10px 20px rgba(0,0,0,.45))}
+#boot b{font:800 26px system-ui,sans-serif;font-style:italic;letter-spacing:.01em}
+.bar2{width:150px;height:5px;border-radius:5px;background:rgba(255,255,255,.25);overflow:hidden}
+.bar2 i{display:block;height:100%;width:0;background:#facc15;border-radius:5px}
+#boot.run .bar2 i{animation:bootFill 1.3s ease-out forwards}
+@keyframes bootFill{from{width:0}to{width:100%}}
+@media (prefers-reduced-motion:reduce){.bar2 i{width:100%!important}}
+
+/* No browser pull-to-refresh circle at the top */
+html,body{overscroll-behavior-y:none}
+</style>
+</head>
+<body>
+<div id="boot" class="first run" role="status" aria-label="Loading"><i class="logo"></i><b>EARN MAX PK</b><div class="bar2"><i></i></div></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs><linearGradient id="gd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fde68a"/><stop offset="1" stop-color="#e0a82e"/></linearGradient></defs>
+<symbol id="crown" viewBox="0 0 64 64"><path d="M6 50 2 18l17 14 13-23 13 23 17-14-4 32z" fill="url(#gd)"/><rect x="8" y="52" width="48" height="6" rx="3" fill="url(#gd)"/><circle cx="2" cy="17" r="3" fill="#fde68a"/><circle cx="32" cy="8" r="3.5" fill="#fde68a"/><circle cx="62" cy="17" r="3" fill="#fde68a"/></symbol>
+<symbol id="pi-home" viewBox="0 0 48 48"><path d="M6 24 24 8l18 16" fill="none" stroke="#ef4444" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 23 24 11l14 12v15a2 2 0 0 1-2 2H12a2 2 0 0 1-2-2z" fill="#fff"/><rect x="19" y="26" width="10" height="14" rx="2" fill="#f97316"/><rect x="13" y="25" width="5" height="5" rx="1" fill="#2563eb"/><rect x="30" y="25" width="5" height="5" rx="1" fill="#2563eb"/></symbol>
+<symbol id="pi-hist" viewBox="0 0 48 48"><rect x="8" y="7" width="26" height="34" rx="4" fill="#fff"/><rect x="15" y="4" width="12" height="7" rx="3" fill="#94a3b8"/><path d="M13 18h4M13 25h4M13 32h4" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/><path d="M21 18h9M21 25h9" stroke="#93c5fd" stroke-width="3" stroke-linecap="round"/><circle cx="34" cy="33" r="10" fill="#fff" stroke="#1d4ed8" stroke-width="3"/><path d="M34 27v6l4 3" fill="none" stroke="#1d4ed8" stroke-width="2.6" stroke-linecap="round"/></symbol>
+<symbol id="pi-hand" viewBox="0 0 48 48"><path d="M2 16l9-4 7 17-9 4z" fill="#60a5fa"/><path d="M46 16l-9-4-7 17 9 4z" fill="#60a5fa"/><path d="M11 13l10-2 6 3 10-2 1 14-9 8-6 1-8-7z" fill="#fbbf24"/><path d="M18 28l6 6M22 25l6 6M26 22l5 5" stroke="#d97706" stroke-width="2.6" stroke-linecap="round"/></symbol>
+<symbol id="pi-bell" viewBox="0 0 48 48"><path d="M24 5a3 3 0 0 1 3 3v1.5c5 1.3 8 5.600 8 11V28l4 5v2H9v-2l4-5v-7.500c0-5.400 3-9.700 8-11V8a3 3 0 0 1 3-3z" fill="#fbbf24"/><path d="M16 14c-3 3-3 8-3 12" stroke="#fef3c7" stroke-width="2.500" stroke-linecap="round" fill="none"/><path d="M19 38a5 5 0 0 0 10 0z" fill="#d97706"/></symbol>
+<symbol id="pi-gear" viewBox="0 0 48 48"><path fill="#38bdf8" fill-rule="evenodd" d="M21 4h6l1 5 3.500 1.500 4.300-3 4.200 4.200-3 4.300L38.500 20l5 1v6l-5 1-1.500 3.500 3 4.300-4.200 4.200-4.300-3L28 39l-1 5h-6l-1-5-3.500-1.500-4.300 3-4.200-4.200 3-4.300L9.500 28l-5-1v-6l5-1 1.500-3.500-3-4.300 4.200-4.200 4.300 3L20 9zM24 17a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></symbol>
+<symbol id="pi-help" viewBox="0 0 48 48"><path d="M9 26v-3a15 15 0 0 1 30 0v3" fill="none" stroke="#ef4444" stroke-width="4.500" stroke-linecap="round"/><rect x="5" y="23" width="9" height="15" rx="4" fill="#dc2626"/><rect x="34" y="23" width="9" height="15" rx="4" fill="#dc2626"/><path d="M38 38c0 5-5 6-12 6" fill="none" stroke="#475569" stroke-width="3" stroke-linecap="round"/><rect x="20" y="41" width="9" height="6" rx="3" fill="#1e293b"/></symbol>
+<symbol id="pi-out" viewBox="0 0 48 48"><path d="M20 8H10a3 3 0 0 0-3 3v26a3 3 0 0 0 3 3h10" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 24h22M32 15l9 9-9 9" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="pi-laurel" viewBox="0 0 64 64"><path d="M20 56C8 46 6 28 14 12M44 56c12-10 14-28 6-44" fill="none" stroke="#d9a62b" stroke-width="3" stroke-linecap="round"/><g fill="#e8b93a"><ellipse cx="9" cy="24" rx="4" ry="7" transform="rotate(-25 9 24)"/><ellipse cx="8" cy="36" rx="4" ry="7" transform="rotate(-10 8 36)"/><ellipse cx="12" cy="47" rx="4" ry="7" transform="rotate(15 12 47)"/><ellipse cx="55" cy="24" rx="4" ry="7" transform="rotate(25 55 24)"/><ellipse cx="56" cy="36" rx="4" ry="7" transform="rotate(10 56 36)"/><ellipse cx="52" cy="47" rx="4" ry="7" transform="rotate(-15 52 47)"/></g></symbol>
+<symbol id="home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></symbol>
+<symbol id="tasks" viewBox="0 0 24 24"><path d="M9 11l3 3 8-8M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></symbol>
+<symbol id="game" viewBox="0 0 24 24"><path d="M6 11h4M8 9v4M15 12h.01M18 10h.01M17.3 5H6.7a4 4 0 0 0-3.9 3.2l-1.3 6A3 3 0 0 0 6 17.5l1.6-1.5h8.8l1.6 1.5a3 3 0 0 0 4.5-3.3l-1.3-6A4 4 0 0 0 17.3 5z"/></symbol>
+<symbol id="wallet" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h13v4M3 7v11a2 2 0 0 0 2 2h14a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1H5a2 2 0 0 1-2-2zM16 14h2"/></symbol>
+<symbol id="user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.5 3.5-7 8-7s8 2.5 8 7"/></symbol>
+<symbol id="bell" viewBox="0 0 24 24"><path d="M6 17v-6a6 6 0 1 1 12 0v6l2 2H4zM10 21h4"/></symbol>
+<symbol id="menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+<symbol id="back" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+</svg>
+
+<div id="app">
+
+<section data-s="splash"><div class="full">
+<div class="lang"><button data-lang="en" class="on">EN</button><button data-lang="ur">اردو</button></div>
+<span class="coin" style="left:8%;top:34%">🪙</span><span class="coin" style="right:10%;top:44%">🪙</span><span class="coin" style="left:16%;top:60%">🪙</span>
+<i class="logo" role="img" aria-label="EARN MAX PK logo" style="width:112px;height:112px;margin-top:6vh"></i>
+<h1 style="margin-top:14px">EARN<b>MAX PK</b></h1>
+<p style="margin-top:8px;font-weight:600">Earn • Play • <span style="color:#fca5a5">Redeem</span></p>
+<div class="rocket">🚀</div>
+<p style="opacity:.9;margin-bottom:8px">Your earning partner.<br>Rewards are paid only after verification.</p>
+<a class="btn" href="#register" style="width:100%">Get Started</a>
+<a class="btn out" href="#login" style="width:100%">Login</a>
+</div></section>
+
+<section data-s="register">
+<a class="back" href="#splash"><svg class="i"><use href="#back"/></svg>Back</a>
+<h2>Create your account</h2><p class="mute">It takes less than a minute.</p>
+<label class="field"><span>Full name</span><input id="rName" placeholder="Your name" autocomplete="name"></label>
+<label class="field"><span>Email</span><input id="rEmail" type="email" placeholder="you@example.com" autocomplete="email"></label>
+<label class="field"><span>Password</span><input id="rPass" type="password" placeholder="At least 8 characters" autocomplete="new-password"></label>
+<label class="field"><span>Referral code (optional)</span><input id="rRef" placeholder="Enter a friend’s code"></label>
+<button id="bReg" class="btn" style="width:100%;margin-top:18px">Create account</button>
+<p class="links mute">Already registered? <a href="#login">Login</a></p>
+</section>
+
+<section data-s="login">
+<a class="back" href="#splash"><svg class="i"><use href="#back"/></svg>Back</a>
+<h2>Welcome back</h2><p class="mute">Login to see your tasks and wallet.</p>
+<label class="field"><span>Email</span><input id="lEmail" type="email" placeholder="you@example.com" autocomplete="email"></label>
+<label class="field"><span>Password</span><input id="lPass" type="password" placeholder="Your password" autocomplete="current-password"></label>
+<p class="links" style="text-align:right;margin-top:8px"><a href="#forgot">Forgot password?</a></p>
+<button id="bLog" class="btn" style="width:100%;margin-top:12px">Login</button>
+<p class="links mute">New here? <a href="#register">Create account</a></p>
+</section>
+
+<section data-s="forgot">
+<a class="back" href="#login"><svg class="i"><use href="#back"/></svg>Back</a>
+<h2>Reset your password</h2><p class="mute">Enter your email and we will send a reset link.</p>
+<label class="field"><span>Email</span><input id="fEmail" type="email" placeholder="you@example.com"></label>
+<button id="bFor" class="btn" style="width:100%;margin-top:18px">Send reset link</button>
+</section>
+
+<section data-s="home">
+<div class="bar"><a class="ib" href="#profile" aria-label="Menu"><svg class="i"><use href="#menu"/></svg></a>
+<div class="t"><i class="logo" role="img" aria-label="Logo" style="width:34px;height:34px;border-radius:9px"></i>EARN MAX PK</div>
+<a class="ib" aria-label="Notifications" href="#notifications"><svg class="i"><use href="#bell"/></svg><i id="ntDot" class="dot" hidden></i></a></div>
+<div class="who"><div class="av"><svg class="crown"><use href="#crown"/></svg></div>
+<div><h3 id="uName">Guest</h3><small id="uSub">Login to see your name</small><br><span class="lv">Level —</span></div></div>
+<div class="note" id="pwaBar" hidden><span>Install EARN MAX PK on your home screen.</span><button id="pwaBarInstall" class="btn">Install</button><button id="pwaBarX" class="ib" aria-label="Close" style="width:34px;height:34px">✕</button></div>
+<div class="bal"><svg class="i" style="width:34px;height:34px"><use href="#wallet"/></svg><div><small>My balance</small><div class="amt" data-w="balance">PKR —</div></div>
+<a class="btn y" href="#withdraw">Withdraw</a></div>
+<a class="card row2" href="#redeem" style="margin-top:10px"><span>🪙 My coins</span><b><span data-coins>0</span> · Redeem ›</b></a>
+<div class="two">
+<div class="tile t1">Total earned<b data-w="totalEarned">—</b></div><div class="tile t2">Tasks done<b data-w="tasksDone" data-n="1">—</b></div>
+<div class="tile t3">Referrals<b id="hmRef">—</b></div><div class="tile t4">Daily rewards<b>—</b></div></div>
+<div class="chk"><svg class="crown"><use href="#crown"/></svg><div><b>Daily check-in</b><br><small style="color:#d9fbe3">Reward is set by the admin</small></div>
+<a class="btn y" href="#checkin">Claim now</a></div>
+<div class="sec"><h3>Quick actions</h3><a href="#tasks">View all</a></div>
+<div class="qa">
+<a href="#tasks"><span class="t1">📋</span>Tasks</a>
+<a href="#spin"><span class="t4">🎡</span>Spin</a>
+<a href="#scratch"><span class="t3">🎟️</span>Scratch</a>
+<a href="#games"><span class="t2">🎮</span>Games</a></div>
+<div class="sec"><h3>Recent transactions</h3></div>
+<div id="homeTx"><div class="card empty"><div class="ic">📒</div>No transactions yet. Verified rewards and payments will be listed here.</div></div>
+</section>
+
+<section data-s="tasks">
+<div class="bar"><a class="ib" href="#home" aria-label="Back"><svg class="i"><use href="#back"/></svg></a><div class="t">Earn more</div><span style="width:42px"></span></div>
+<div class="tabs" id="tabs"><button class="on" data-c="all">All tasks</button><button data-c="daily">Daily</button><button data-c="social">Social</button><button data-c="video">Video</button><button data-c="special">Special</button></div>
+<div id="taskList"><div class="card empty"><div class="ic">🗂️</div>No tasks available right now. New tasks from the admin will appear here.</div></div>
+<p class="mute" style="text-align:center;font-size:12.5px">A reward is credited only after the task is verified.</p>
+</section>
+
+<section data-s="games">
+<div class="bar"><a class="ib" href="#home" aria-label="Back"><svg class="i"><use href="#back"/></svg></a><div class="t">Games and fun</div><span style="width:42px"></span></div>
+<div class="hero"><div><h2>Play games.<br><em>Earn rewards!</em></h2><p>Free-to-play. Rewards depend on the admin’s limits.</p><a class="btn y" href="#spin">Play now</a></div><div class="big">🎮</div></div>
+<div class="games">
+<div class="gm g1"><div class="big">🎡</div>Lucky Spin<small>Free rewards only</small><a class="btn y" href="#spin">Spin now</a></div>
+<div class="gm g2"><div class="big">🎁</div>Scratch Card<small>Free rewards only</small><a class="btn y" href="#scratch">Scratch now</a></div>
+<div class="gm g3"><div class="big">❓</div>Quiz Game<small>Test your knowledge</small><button class="btn y" data-t="Quiz Game is coming in a later update.">Play now</button></div>
+<div class="gm g4"><div class="big">🃏</div>Memory Game<small>Match the cards</small><a class="btn y" href="#memory">Play now</a></div></div>
+</section>
+
+<section data-s="wallet">
+<div class="bar"><a class="ib" href="#home" aria-label="Back"><svg class="i"><use href="#back"/></svg></a><div class="t">Wallet and transactions</div><span style="width:42px"></span></div>
+<div class="bal"><svg class="i" style="width:34px;height:34px"><use href="#wallet"/></svg><div><small>Available balance</small><div class="amt" data-w="balance">PKR —</div></div></div>
+<div class="two" style="margin-bottom:0"><div class="tile t3">Pending<b data-w="pending">PKR —</b></div><div class="tile t4">Total earnings<b data-w="totalEarned">PKR —</b></div></div>
+<div class="acts">
+<a class="t1" href="#deposit"><span>🛡️</span>Deposit</a>
+<a class="t4" href="#withdraw"><span>📤</span>Withdraw</a>
+<a class="t2" href="#history"><span>🕘</span>History</a></div>
+<a class="card row2" href="#redeem" style="margin-top:12px"><span>🪙 Coins</span><b><span data-coins>0</span> · Redeem ›</b></a>
+<div class="note">Methods like JazzCash and Easypaisa are set by the admin. A payment is marked successful only after it is verified.</div>
+<div class="sec"><h3>Recent transactions</h3></div>
+<div id="walTx"><div class="card empty"><div class="ic">🧾</div>No transactions yet.</div></div>
+</section>
+
+<section data-s="refer">
+<div class="bar"><a class="ib" href="#home" aria-label="Back"><svg class="i"><use href="#back"/></svg></a><div class="t">Referral program</div><span style="width:42px"></span></div>
+<div class="hero" style="background:linear-gradient(135deg,#1d4ed8,#4338ca)"><div><h2>Refer friends.<br><em>Earn more!</em></h2><p>Commission is set by the admin.</p></div><div class="big">📣</div></div>
+<div class="sec"><h3>Your referral code</h3></div>
+<div class="card code"><b id="refCode">—</b><button id="refCopy" class="btn sm" style="flex:none;padding:0 18px" data-t="Your code is created when you register (Stage 4).">Copy</button></div>
+<div class="sec"><h3>Referral stats</h3></div>
+<div class="two" style="margin-top:0"><div class="tile t1">Total referrals<b id="rfTotal">—</b></div><div class="tile t4">Total earned<b id="rfEarn">PKR —</b></div></div>
+<button id="rfShare" class="btn" data-t="Sharing isn’t connected here.">Share now</button>
+<a class="btn out" href="#friends" style="margin-top:10px">👥 My referred friends</a>
+<p class="mute" style="text-align:center;font-size:12.5px;margin-top:10px">Self-referrals and repeat claims are blocked.</p>
+<div style="text-align:center;margin:18px 0 8px"><small class="mute" style="font-size:11px">Advertisement</small><div id="adBanner" style="display:flex;justify-content:center;min-height:250px;margin-top:4px"></div></div>
+</section>
+
+<section data-s="friends">
+<div class="bar"><a class="ib" href="#refer" aria-label="Back"><svg class="i"><use href="#back"/></svg></a><div class="t">My referred friends</div><span style="width:42px"></span></div>
+<div class="two" style="margin-top:0"><div class="tile t4">Completed<b id="frPaid">0</b></div><div class="tile t3">Pending<b id="frWait">0</b></div></div>
+<div id="frList"><div class="card empty"><div class="ic">👥</div>Loading…</div></div>
+<p class="mute" style="text-align:center;font-size:12.5px;margin-top:10px">Completed means your bonus was paid. Pending friends still need to finish the game tasks and make a first deposit.</p>
+</section>
+
+<section data-s="profile">
+<div class="bar"><a class="ib" href="#home" aria-label="Back"><svg class="i"><use href="#back"/></svg></a><div class="t">Profile and settings</div><span style="width:42px"></span></div>
+<div class="who"><div class="av"><svg class="lau" viewBox="0 0 64 64"><use href="#pi-laurel"/></svg><svg class="crown"><use href="#crown"/></svg></div><div><h3 id="pName">Not signed in</h3><small id="pSub">Login to manage your profile</small></div></div>
+<a id="pLogin" class="btn sm" href="#login" style="margin-bottom:12px">Login</a>
+<div class="card list">
+<a href="#home"><span class="ic pg1"><svg viewBox="0 0 48 48"><use href="#pi-home"/></svg></span>My dashboard</a>
+<a href="#history"><span class="ic pg2"><svg viewBox="0 0 48 48"><use href="#pi-hist"/></svg></span>Transaction history</a>
+<a href="#refer"><span class="ic pg3"><svg viewBox="0 0 48 48"><use href="#pi-hand"/></svg></span>Referral details</a>
+<a href="#notifications"><span class="ic pg4"><svg viewBox="0 0 48 48"><use href="#pi-bell"/></svg></span>Notifications</a>
+<a href="#prefs"><span class="ic pg5"><svg viewBox="0 0 48 48"><use href="#pi-gear"/></svg></span>App settings and language</a>
+<a href="#support"><span class="ic pg6"><svg viewBox="0 0 48 48"><use href="#pi-help"/></svg></span>Help and support</a>
+<button id="bOut" data-t="You’re not signed in yet."><span class="ic"><svg viewBox="0 0 48 48"><use href="#pi-out"/></svg></span>Logout</button></div>
+</section>
+
+<section data-s="ads">
+<div class="bar"><a class="ib" href="#tasks" aria-label="Back"><svg class="i"><use href="#back"/></svg></a><div class="t">Watch ads and earn</div><span style="width:42px"></span></div>
+<div class="card row2"><span>Ads watched today</span><b>— / —</b></div>
+<div class="card empty" style="margin-top:12px"><div class="ic">▶️</div>No video ads right now. Ads added by the admin will appear here, and the reward is credited only after the view is verified.</div>
+<a class="btn out" href="#tasks" style="margin-top:12px">Back to tasks</a>
+</section>
+
+<section data-s="checkin">
+<div class="bar"><a class="ib" href="#home" aria-label="Back"><svg class="i"><use href="#back"/></svg></a><div class="t">Daily check-in</div><span style="width:42px"></span></div>
+<div class="chk" style="flex-direction:column;text-align:center;padding:20px"><svg class="crown" style="width:60px;height:60px"><use href="#crown"/></svg><h2>Check in every day</h2><small style="color:#d9fbe3">Reward amounts are set by the admin</small></div>
+<div class="days"><div id="day1">Day 1<b>—</b></div><div id="day2">Day 2<b>—</b></div><div id="day3">Day 3<b>—</b></div><div id="day4">Day 4<b>—</b></div><div id="day5">Day 5<b>—</b></div><div id="day6">Day 6<b>—</b></div><div id="day7">Day 7<b>—</b></div></div>
+<button id="ciBtn" class="btn" data-t="Check-in isn’t connected here.">Claim today’s reward</button>
+</section>
+
+<section data-s="spin">
+<div class="bar"><a class="ib" href="#games" aria-label="Back"><svg class="i"><use href="#back"/></svg></a><div class="t">Daily Spin</div><span class="chip2">🪙 <b data-coins>0</b></span></div>
+<div class="spinBox">
+<h2 style="color:#fff;text-align:center">Spin &amp; Win Big Rewards!</h2>
+<div class="wheelWrap"><div class="pointer">🔻</div><div class="wheel2" id="wheel"></div><div class="hub">SPIN</div></div>
+<div class="costRow"><span>Spin cost: <b id="spinCost">—</b> Coins</span><small>Free spins left: <b id="spinLeft">—</b> · Spins left today: <b id="spinMax">—</b></small></div>
+<button id="spinBtn" class="btn y">Spin Now</button>
+<p class="timer">Free spins reset in <b id="spinTimer">--:--:--</b></p>
+</div>
+<div class="note">Win coins, not cash. Redeem your coins for PKR from the Wallet.</div>
+<div class="sec"><h3>My spin history</h3></div><div id="spinHist"><div class="card empty"><div class="ic">🎡</div>No spins yet.</div></div>
+</section>
+
+<section data-s="scratch">
+<div class="bar"><a class="ib" href="#games" aria-label="Back"><svg class="i"><use href="#back"/></svg></a><div class="t">Scratch Card</div><span class="chip2">🪙 <b data-coins>0</b></span></div>
+<div class="spinBox" style="background:linear-gradient(160deg,#1e3a8a,#4338ca 60%,#6d28d9)">
+<h2 style="color:#fff;text-align:center">Scratch &amp; Win Rewards!</h2>
+<div class="scBox"><div class="prz" id="scratchPrize">🎁</div><canvas id="scratchCv" width="320" height="170"></canvas></div>
+<div class="costRow"><span>Scratch cost: <b id="scratchCost">—</b> Coins</span><small>Free cards left: <b id="scratchLeft">—</b> · Cards left today: <b id="scratchMax">—</b></small></div>
+<button id="scratchBtn" class="btn y">Buy &amp; Scratch</button>
+<p class="timer">Free cards reset in <b id="scratchTimer">--:--:--</b></p>
+</div>
+<div class="card"><b>Possible rewards</b><div id="scratchChips" class="chips"></div></div>
+<div class="sec"><h3>My scratch history</h3></div><div id="scratchHist"><div class="card empty"><div class="ic">🎟️</div>No cards yet.</div></div>
+</section>
+
+<section data-s="deposit">
+<div class="bar"><a class="ib" href="#wallet" aria-label="Back"><svg class="i"><use href="#back"/></svg></a><div class="t">Deposit request</div><span style="width:42px"></span></div>
+<div class="note">Pay the account shown below, then submit your details. The deposit stays Pending until an admin verifies your payment.</div>
+<div class="card" id="dpInfo" hidden></div>
+<label class="field"><span>Amount (PKR)</span><input type="number" inputmode="numeric" placeholder="Enter amount" id="dpAmt"></label>
+<label class="field"><span>Payment method</span><select id="dpMethod"><option>Choose a method</option><option>JazzCash</option><option>Easypaisa</option></select></label>
+<label class="field"><span>Transaction ID</span><input placeholder="From your payment receipt" id="dpTrx"></label>
+<label class="field"><span>Your account number</span><input type="tel" placeholder="03XX XXXXXXX" id="dpNum"></label>
+<button id="dpBtn" class="btn" style="margin-top:18px" data-t="Deposits aren’t connected here.">Submit deposit request</button>
+</section>
+
+<section data-s="withdraw">
+<div class="bar"><a class="ib" href="#wallet" aria-label="Back"><svg class="i"><use href="#back"/></svg></a><div class="t">Withdrawal request</div><span style="width:42px"></span></div>
+<div class="card row2"><span>Available balance</span><b data-w="balance">PKR —</b></div>
+<div class="note" id="wdNote">The minimum amount and methods are set by the admin. Your request stays Pending until it is approved.</div>
+<label class="field"><span>Amount (PKR)</span><input type="number" inputmode="numeric" placeholder="Enter amount" id="wdAmt"></label>
+<label class="field"><span>Payment method</span><select id="wdMethod"><option>Choose a method</option><option>JazzCash</option><option>Easypaisa</option></select></label>
+<label class="field"><span>Account number</span><input type="tel" placeholder="03XX XXXXXXX" id="wdNum"></label>
+<label class="field"><span>Account title</span><input placeholder="Name on the account" id="wdTitle"></label>
+<button id="wdBtn" class="btn" style="margin-top:18px" data-t="Withdrawals aren’t connected here.">Submit withdrawal request</button>
+</section>
+
+<section data-s="history">
+<div class="bar"><a class="ib" href="#wallet" aria-label="Back"><svg class="i"><use href="#back"/></svg></a><div class="t">Transaction history</div><span style="width:42px"></span></div>
+<div class="tabs"><button class="on" data-f="all">All</button><button data-f="reward">Rewards</button><button data-f="deposit">Deposits</button><button data-f="withdrawal">Withdrawals</button></div>
+<div class="sec"><h3>Your requests</h3></div>
+<div id="reqList"><div class="card empty"><div class="ic">📨</div>No deposit or withdrawal requests yet.</div></div>
+<div class="sec"><h3>Money movements</h3></div>
+<div id="hisTx"><div class="card empty"><div class="ic">🧾</div>No transactions yet. Every reward, deposit and withdrawal will be listed here with its status.</div></div>
+<p style="margin-top:14px"><span class="pill p1">Pending</span><span class="pill p2">Approved</span><span class="pill p3">Rejected</span></p>
+</section>
+
+<section data-s="news">
+<div class="bar"><a class="ib" href="#home" aria-label="Back"><svg class="i"><use href="#back"/></svg></a><div class="t">Updates</div><span style="width:42px"></span></div>
+<div id="nwList"><div class="card empty"><div class="ic">📢</div>No updates yet. Daily news and changes will appear here.</div></div>
+</section>
+
+<section data-s="memory">
+<div class="bar"><a class="ib" href="#games" aria-label="Back"><svg class="i"><use href="#back"/></svg></a><div class="t">Memory Game</div><span style="width:42px"></span></div>
+<div class="mm-lv" id="mmLv"></div>
+<div class="mm-st"><div>Moves<b id="mmMoves">0</b></div><div>Time<b id="mmTime">0s</b></div><div>Rewards left<b id="mmLeft">—</b></div></div>
+<div class="mm-b" id="mmBoard"></div>
+<div class="mm-m" id="mmMsg" hidden></div>
+<button class="btn" id="mmNew" type="button">New game</button>
+<p class="mute" id="mmPrize" style="text-align:center;font-size:12.5px;margin-top:10px"></p>
+</section>
+
+<section data-s="notifications">
+<div class="bar"><a class="ib" href="#home" aria-label="Back"><svg class="i"><use href="#back"/></svg></a><div class="t">Notifications</div><span style="width:42px"></span></div>
+<div id="ntList"><div class="card empty"><div class="ic">🔔</div>You have no notifications. Updates about rewards, deposits and withdrawals will appear here.</div></div>
+</section>
+
+<section data-s="support">
+<div class="bar"><a class="ib" href="#profile" aria-label="Back"><svg class="i"><use href="#back"/></svg></a><div class="t">Help and support</div><span style="width:42px"></span></div>
+<label class="field"><span>Subject</span><input id="hsSubj" maxlength="80" autocomplete="off" placeholder="What do you need help with?"></label>
+<label class="field"><span>Message</span><textarea id="hsMsg" maxlength="1000" placeholder="Describe the problem"></textarea></label>
+<button class="btn" id="hsSend" type="button" style="margin-top:18px">Send to support</button>
+<div class="sec"><h3>My requests</h3></div>
+<div id="hsList"><div class="card empty"><div class="ic">💬</div>No support requests yet.</div></div>
+</section>
+
+<section data-s="prefs">
+<div class="bar"><a class="ib" href="#profile" aria-label="Back"><svg class="i"><use href="#back"/></svg></a><div class="t">App settings</div><span style="width:42px"></span></div>
+<div class="sec"><h3>Appearance</h3></div>
+<div class="tabs"><button data-th="auto" class="on">Auto</button><button data-th="light">Light</button><button data-th="dark">Dark</button></div>
+<div class='sec'><h3>Sound</h3></div>
+<div class='card' style='padding:4px 14px'><div class='tg'><div>Sound effects<small class='mute'>Clicks, rewards and alerts</small></div><label class='sw'><input type='checkbox' id='sndOn' checked><i></i></label></div><div class='tg'><span style='flex:1'>Volume</span><input type='range' id='sndVol' min='0' max='100' value='70' style='flex:2;accent-color:#16a34a' aria-label='Volume'></div></div>
+<details class='card' style='margin-top:10px'><summary style='font-weight:700;cursor:pointer'>Sound test</summary><div class='snd' id='sndList'></div></details>
+<div class="sec"><h3>Language</h3></div>
+<div class="tabs"><button class="on" data-lang="en">English</button><button data-lang="ur">اردو</button></div>
+<div class="sec"><h3>Install app</h3></div>
+<button id="pwaInstall" class="btn out">Install app on your phone</button>
+<p id="pwaState" class="mute" style="font-size:12.5px;margin-top:8px"></p>
+<div class="sec"><h3>Push notifications</h3></div>
+<button id="pwaPush" class="btn out">Turn on push notifications</button>
+<p class="mute" style="text-align:center;font-size:12.5px;margin-top:16px">EARN MAX PK · Version 1.0</p>
+</section>
+
+<section data-s="redeem">
+<div class="bar"><a class="ib" href="#wallet" aria-label="Back"><svg class="i"><use href="#back"/></svg></a><div class="t">Redeem coins</div><span style="width:42px"></span></div>
+<div class="card row2"><span>🪙 Your coins</span><b data-coins>0</b></div>
+<div class="note" id="rdRate">Redeeming opens once the admin sets a rate.</div>
+<label class="field"><span>Coins to redeem</span><input id="rdAmt" type="number" inputmode="numeric" placeholder="e.g. 1000"></label>
+<p class="mute" id="rdPkr" style="margin:8px 0">You get: PKR —</p>
+<button id="rdBtn" class="btn" style="margin-top:10px">Redeem now</button>
+<div class="sec"><h3>My redemptions</h3></div><div id="rdList"><div class="card empty"><div class="ic">🪙</div>No redemptions yet.</div></div>
+</section>
+
+</div>
+
+<nav id="nav" hidden>
+<a href="#home" data-n="home"><svg class="i"><use href="#home"/></svg>Home</a>
+<a href="#tasks" data-n="tasks"><svg class="i"><use href="#tasks"/></svg>Tasks</a>
+<a href="#games" data-n="games"><svg class="i"><use href="#game"/></svg>Games</a>
+<a href="#wallet" data-n="wallet"><svg class="i"><use href="#wallet"/></svg>Wallet</a>
+<a href="#news" data-n="news"><span class="ne">📢</span>Updates</a>
+<a href="#profile" data-n="profile"><svg class="i"><use href="#user"/></svg>Profile</a>
+</nav>
+<div id="lockBox" class="ov solid" hidden><div class="card"><div class="ic" style="margin:0 auto 10px">⏳</div><h2 id="lockT">Waiting for approval</h2><p class="mute" id="lockB" style="margin:8px 0 16px"></p><button id="lockOut" class="btn out">Logout</button></div></div>
+<div id="welcomeBox" class="ov" hidden><div class="card"><div class="ic" style="margin:0 auto 10px">🎉</div><h2 id="welT">Welcome!</h2><p class="mute" id="welB" style="margin:8px 0 16px"></p><button id="welOk" class="btn">OK</button></div></div>
+<div id="toast" role="status"></div>
+
+<script>
+var secs=[].slice.call(document.querySelectorAll("[data-s]")),names=secs.map(function(s){return s.dataset.s}),
+nav=document.getElementById("nav"),toast=document.getElementById("toast"),tt;
+function route(){
+  var h=location.hash.slice(1)||"splash";
+  if(names.indexOf(h)<0)h="splash";
+  secs.forEach(function(s){s.hidden=s.dataset.s!==h});
+  nav.hidden=["home","tasks","games","wallet","profile","refer","news"].indexOf(h)<0;
+  [].forEach.call(nav.querySelectorAll("a"),function(a){a.classList.toggle("on",a.dataset.n===h)});
+  window.scrollTo(0,0);
+}
+function say(m){window.Sfx&&Sfx.play('pop');toast.textContent=m;toast.classList.add("on");clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove("on")},2800)}
+document.addEventListener("click",function(e){
+  var t=e.target.closest("[data-t]");if(t)say(t.dataset.t);
+  var b=e.target.closest(".tabs button");var th=e.target.closest("[data-th]");if(th)setTheme(th.dataset.th);
+  if(b)[].forEach.call(b.parentNode.children,function(x){x.classList.toggle("on",x===b)});
+});
+function setTheme(v){var r=document.documentElement;if(v=="auto")r.removeAttribute("data-theme");else r.setAttribute("data-theme",v);try{localStorage.setItem("emp-theme",v)}catch(x){}}
+try{var sv=localStorage.getItem("emp-theme");if(sv&&sv!="auto")setTheme(sv)}catch(x){}
+window.addEventListener("hashchange",route);
+route();
+var Sfx=(function(){var ctx,mst,NB,on=true,vol=.7,cur=null,wd=0;
+try{on=localStorage.getItem('emp-snd-on')!=='0';var sv2=parseFloat(localStorage.getItem('emp-snd-vol'));if(sv2>=0&&sv2<=1)vol=sv2}catch(x){}
+function init(){if(!ctx){var AC=window.AudioContext||window.webkitAudioContext;if(!AC)return false;try{ctx=new AC()}catch(x){return false}var cp=ctx.createDynamicsCompressor();mst=ctx.createGain();mst.gain.value=vol;mst.connect(cp);cp.connect(ctx.destination)}return true}
+function nbuf(){if(!NB){NB=ctx.createBuffer(1,ctx.sampleRate,ctx.sampleRate);var d=NB.getChannelData(0);for(var i=0;i<d.length;i++)d[i]=Math.random()*2-1}return NB}
+function tone(o,f,t,d,ty,g,f2){var s=ctx.createOscillator(),e=ctx.createGain();s.type=ty||'sine';s.frequency.setValueAtTime(f,t);if(f2)s.frequency.exponentialRampToValueAtTime(f2,t+d);e.gain.setValueAtTime(.0001,t);e.gain.exponentialRampToValueAtTime(g||.3,t+.006);e.gain.exponentialRampToValueAtTime(.0001,t+d);s.connect(e);e.connect(o);s.start(t);s.stop(t+d+.02)}
+function nz(o,t,d,g,ft,f,q){var s=ctx.createBufferSource(),fl=ctx.createBiquadFilter(),e=ctx.createGain();s.buffer=nbuf();fl.type=ft||'bandpass';fl.frequency.value=f||3000;fl.Q.value=q||1;e.gain.setValueAtTime(.0001,t);e.gain.exponentialRampToValueAtTime(g||.2,t+.004);e.gain.exponentialRampToValueAtTime(.0001,t+d);s.connect(fl);fl.connect(e);e.connect(o);s.start(t,Math.random()*.3);s.stop(t+d+.02)}
+function bell(o,f,t,d,g){tone(o,f,t,d,'sine',g);tone(o,f*2.76,t,d*.5,'sine',g*.35);tone(o,f*5.4,t,d*.25,'sine',g*.15)}
+function lp(o,f){var l=ctx.createBiquadFilter();l.type='lowpass';l.frequency.value=f;l.connect(o);return l}
+var S={
+click:{p:1,l:.06,f:function(o,t){tone(o,1900,t,.035,'sine',.22,1100);nz(o,t,.02,.08,'highpass',5000)}},
+pop:{p:2,l:.12,f:function(o,t){tone(o,380,t,.09,'sine',.3,820)}},
+coin:{p:3,l:.5,f:function(o,t){bell(o,1976,t,.28,.22);bell(o,2637,t+.08,.34,.2);nz(o,t,.03,.1,'highpass',6000)}},
+count:{p:3,l:.95,f:function(o,t){for(var i=0;i<12;i++){var a=t+i*.065;nz(o,a,.03,.12,'highpass',4500);tone(o,900+i*70,a,.04,'triangle',.08)}bell(o,2093,t+.8,.2,.15)}},
+cash:{p:4,l:1,f:function(o,t){nz(o,t,.05,.25,'bandpass',2200,2);nz(o,t+.05,.06,.18,'highpass',6000);bell(o,1568,t+.08,.55,.22);bell(o,2093,t+.12,.7,.2);tone(o,3136,t+.14,.4,'sine',.07)}},
+reward:{p:4,l:.95,f:function(o,t){[1319,1568,2093,2637].forEach(function(f,i){bell(o,f,t+i*.08,.4,.18);nz(o,t+i*.08,.03,.06,'highpass',7000)})}},
+success:{p:4,l:1,f:function(o,t){[1047,1319,1568].forEach(function(f,i){tone(o,f,t+i*.09,.7,'sine',.2);tone(o,f*2,t+i*.09,.4,'sine',.06)})}},
+bell:{p:5,l:1.4,f:function(o,t){bell(o,880,t,.9,.22);bell(o,1175,t+.28,1,.2)}},
+level:{p:5,l:1.4,f:function(o,t){[523,659,784,1047].forEach(function(f,i){tone(o,f,t+i*.11,.28,'triangle',.2);tone(o,f,t+.46,.8,'sine',.12)});bell(o,2093,t+.46,.8,.1)}},
+jackpot:{p:6,l:2.4,f:function(o,t){var f2=lp(o,3000);[523,659,784,1047,1319,1568,2093].forEach(function(f,i){tone(f2,f,t+i*.09,.22,'sawtooth',.07);tone(o,f,t+i*.09,.3,'triangle',.1)});[523,784,1047,1568,2093].forEach(function(f){tone(o,f,t+.7,1.4,'triangle',.1)});for(var i=0;i<26;i++)bell(o,2000+Math.random()*1800,t+.15+Math.random()*1.9,.2,.07);nz(o,t+.7,.5,.15,'highpass',6000)}},
+spin:{p:5,l:2.9,f:function(o,t){var a=t,g=.045;for(var i=0;i<22;i++){tone(o,700+(i%2)*180,a,.03,'square',.06);nz(o,a,.02,.1,'bandpass',3500,3);a+=g;g*=1.075}bell(o,1760,a+.05,.5,.16)}},
+scratch:{p:3,l:.7,f:function(o,t){for(var i=0;i<7;i++)nz(o,t+i*.085,.07,.14+Math.random()*.06,'bandpass',2800+Math.random()*2500,1.2)}},
+wallet:{p:4,l:.7,f:function(o,t){nz(o,t,.22,.12,'lowpass',1800,.7);nz(o,t+.2,.03,.2,'bandpass',2600,3);tone(o,880,t+.24,.3,'sine',.14);tone(o,1319,t+.32,.4,'sine',.13)}},
+error:{p:5,l:.4,f:function(o,t){var f2=lp(o,700);[0,.14].forEach(function(d){tone(f2,170,t+d,.11,'sawtooth',.2,120)})}},
+welcome:{p:6,l:2.4,f:function(o,t){var f2=lp(o,2200);[[262,0],[330,.2],[392,.4],[523,.6]].forEach(function(n){tone(f2,n[0],t+n[1],.5,'sawtooth',.09);tone(o,n[0]*2,t+n[1],.4,'sine',.06)});[523,659,784,1047].forEach(function(f){tone(f2,f,t+.9,1.2,'sawtooth',.05);tone(o,f,t+.9,1.2,'sine',.07)});bell(o,2093,t+.95,1.2,.12);bell(o,3136,t+1.1,1,.07)}}};
+function run(n){var d=S[n],t=ctx.currentTime;if(cur&&t<cur.end){if(cur.p>d.p)return;cur.g.gain.cancelScheduledValues(t);cur.g.gain.setTargetAtTime(0,t,.015)}var g=ctx.createGain();g.connect(mst);cur={g:g,end:t+d.l,p:d.p};try{d.f(g,t+.01)}catch(x){}}
+function play(n){if(!on||!S[n]||!init())return;if(ctx.state!=='running'){ctx.resume().then(function(){run(n)},function(){});return}run(n)}
+var L=[['cash','Cash register'],['coin','Coin drop'],['count','Money counting'],['reward','Cash reward'],['success','Success chime'],['click','Button click'],['pop','Soft pop'],['bell','Notification bell'],['level','Level up'],['jackpot','Jackpot'],['spin','Spin wheel'],['scratch','Scratch card'],['wallet','Wallet opening'],['error','Soft error'],['welcome','Royal welcome']];
+var eo=document.getElementById('sndOn'),ev=document.getElementById('sndVol'),el=document.getElementById('sndList');
+if(el)el.innerHTML=L.map(function(a){return '<button data-snd='+a[0]+'>'+a[1]+'</button>'}).join('');
+if(eo){eo.checked=on;eo.addEventListener('change',function(){on=eo.checked;try{localStorage.setItem('emp-snd-on',on?'1':'0')}catch(x){}if(on)play('pop')})}
+if(ev){ev.value=Math.round(vol*100);ev.addEventListener('input',function(){vol=ev.value/100;if(mst)mst.gain.value=vol});ev.addEventListener('change',function(){try{localStorage.setItem('emp-snd-vol',String(vol))}catch(x){}play('coin')})}
+document.addEventListener('click',function(e){var s=e.target.closest('[data-snd]');
+if(s){if(on)play(s.dataset.snd);else say('Sound is off. Turn it on above.');return}
+if(!wd&&(location.hash===''||location.hash==='#splash')){wd=1;play('welcome');return}
+if(e.target.closest('[data-t]'))return;
+if(e.target.closest('a,button,.sw,summary'))play('click')},true);
+window.addEventListener('hashchange',function(){if(location.hash==='#wallet')play('wallet')});
+return{play:play}})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script type="module" src="./app-auth.js"></script>
+<script src="/fx.js" defer></script>
+<script src="/ads.js" defer></script>
+</body>
+</html>
